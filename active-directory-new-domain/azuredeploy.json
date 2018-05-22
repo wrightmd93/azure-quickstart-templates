@@ -57,7 +57,7 @@
     "adRDPNAT": "adRDP",
     "adNicName": "adNic",
     "adNicIPAddress": "10.0.0.4",
-    "adVMName": "adVM",
+    "adVMName": "adDC1",
     "adSubnetName": "adSubnet",
     "adSubnetAddressPrefix": "10.0.0.0/24",
     "publicIPAddressName": "adPublicIP",
@@ -153,7 +153,7 @@
                 "id": "[resourceId('Microsoft.Network/loadBalancers/frontendIPConfigurations', variables('adLBName'), variables('adLBFE'))]"
               },
               "protocol": "tcp",
-              "frontendPort": 3389,
+              "frontendPort": 5000,
               "backendPort": 3389,
               "enableFloatingIP": false
             }
