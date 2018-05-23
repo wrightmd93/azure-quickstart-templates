@@ -116,7 +116,7 @@
             DomainName = $DomainName
             DomainAdministratorCredential = $DomainCreds
             UserName = $UserCreds.UserName
-            Password = $UserCreds.Password
+            Password = $UserCreds
             Ensure = "Present"
             DependsOn = "[xWaitForADDomain]DscForestWait"
         }
